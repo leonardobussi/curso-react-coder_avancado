@@ -16,7 +16,7 @@ BillingCycle.route('count', (req, res, next) => {
 })
 
 BillingCycle.route('summary', (req, res, next) => {
-    BillingCycle.aggregate([{
+    BillingCycle.aggregate({
         $project: 
         {
             credit: {$sum: "$credits.value"}, 
@@ -34,7 +34,7 @@ BillingCycle.route('summary', (req, res, next) => {
         } else {
             res.json(result[0] || { credit: 0, debt: 0 })
         }
-    }])
+    })
 })
 
 module.exports = BillingCycle
