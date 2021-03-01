@@ -1,0 +1,11 @@
+{
+  "users": [{
+    "id": 1,
+    "name": "Jorge algusto",
+    "email": "jorge@algusto.com"
+  },{
+    "id": 2,
+    "name": "felipe albane",
+    "email": "felipe@albane.com"
+  }]
+}
